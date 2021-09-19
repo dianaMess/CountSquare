@@ -10,7 +10,8 @@ namespace NUnitTest
         [Test]
         public void TestNull()
         {
-            Assert.Throws<ArgumentNullException>(() => (null as int[]).Count());
+            bool is_right = false;
+            Assert.Throws<ArgumentNullException>(() => (null as int[]).Count(out is_right));
         }
 
         [TestCase(new int[] { 3, 4, 5 }, ExpectedResult = 6)]
@@ -18,7 +19,8 @@ namespace NUnitTest
 
         public double TestNotNullTriangleSquare(int[] array)
         {
-            double result = array.Count();
+            bool is_right = false;
+            double result = array.Count(out is_right);
             return result;
         }
 
@@ -26,7 +28,8 @@ namespace NUnitTest
         [TestCase(new int[] { 5 }, ExpectedResult = 78.53981633974483)]
         public double TestNotNullCircleSquare(int[] array)
         {
-            double result = array.Count();
+            bool is_right = false;
+            double result = array.Count(out is_right);
             return result;
         }
     }
