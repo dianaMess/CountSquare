@@ -2,6 +2,7 @@
 * Добавлены юнит-тесты
 * Добавлена проверка на то, является ли треугольник прямоугольным 
 # SQL-запрос
-[SQL-запрос на pastebin](https://pastebin.com/zgfPij2W)
+[SQL-запрос на pastebin](https://pastebin.com/zgfPij2W)  
+
 ![1](1.png)
 ![3](3.png)
