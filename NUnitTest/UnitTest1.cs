@@ -13,7 +13,8 @@ namespace NUnitTest
             bool is_right = false;
             Assert.Throws<ArgumentNullException>(() => (null as int[]).Count(out is_right));
         }
-
+        [TestCase(new int[] { 7, 5, 8 }, ExpectedResult = 17.320508075688775)]
+        [TestCase(new int[] { 10, 9, 15 }, ExpectedResult = 43.634848458542855)]
         [TestCase(new int[] { 3, 4, 5 }, ExpectedResult = 6)]
         [TestCase(new int[] { 5, 12, 13 }, ExpectedResult = 30)]
 
